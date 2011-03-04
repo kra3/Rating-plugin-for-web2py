@@ -1,0 +1,52 @@
+This plugin is licensed under the LGPL license version 3 
+(http://www.gnu.org/licenses/lgpl.html)
+
+copy right :  Arun.K.R <the1.arun@gmail.com>
+
+= Star rating widget =
+
+**NB: plugin_wiki patch available **
+
+// There's a **plugin wiki patch** included. so if you are already using plugin_wiki you are at home again. I send the patch a few weeks ago. Don't know already incorporated in plugin_wiki; if not here it is.//
+---- 
+
+I took [[http://www.web2py.com/plugins/default/rating/ | this]] rating plug-in and modified little bit. 
+This plug-in uses jQuery extension and I'm aware that there is a better [[http://orkans\-tmp.22web.net/star_rating/ | star rating] jQuery plug-in. I've plan to port this plugin to use that js library. 
+
+But for less complex things, this plugin will suffice. dependency is so small. (other one need jQuery-ui too & I prefer to make my client to download as less content as needed.)
+***
+
+== Syntax ==
+{{{
+#!python
+
+  {{=plugin_rating('shout',1)}}
+  #or to use split stars
+  {{=plugin_rating('shout',1, True)}}
+}}}
+    
+
+If Table shout has a field called 'rating' average rating will be updated there too.
+If it's not there, it'll work as before.
+
+== I got a few new features! ==
+
+1. Error fixes
+
+2. It uses same syntax as original plug-in (so home back again)
+   
+3. support to include more than one rating widget per page.
+
+4. If the parent table for which we are using rating has a field called 'rate' of type dobule, then average rating will be added to that field too.
+    It'll be handy, if we have to run complex queries on that table involving rating. So, this make less db calls.
+    Also, this degrades gracefully, if there's no 'rating' field in the table without making any noise. 
+
+5. Added support to display rating widget for same record more than once in a page.
+
+6. Split stars is supported now. 
+
+
+**To download the plug-in,** please visit [[https://bitbucket.org/kra3/rating-plugin-for-web2py/downloads/ |**download**"]]
+
+Looking forward to here your comments and possible features that can be added. 
+(I know, it doesn't support callback functions now, may be I release another one that uses star rating jq plugin for that to make this one simple and lean)

@@ -1,0 +1,48 @@
+43,45c43
+<            'plugin_wiki/multiselect/jquery.multiselect.js',
+<            'plugin_wiki/rating/jquery.rating.css',
+<            'plugin_wiki/rating/jquery.rating.js']:          
+---
+>            'plugin_wiki/multiselect/jquery.multiselect.js']:          
+131,143d128
+< db.define_table('plugin_wiki_master',
+<                 Field('tablename'),
+<                 Field('record_id','integer'),
+<                 Field('rating','double'),
+<                 Field('counter','integer'))
+<    
+<    
+< db.define_table('plugin_wiki_aux',
+<                 Field('master',db.plugin_rating_master),
+<                 Field('rating','double'),
+<                 Field('created_by',db.auth_user))
+<    
+<    
+476,499c461
+<         return gluon.template.render(content=content,context=context) 
+< 
+<         
+<     @staticmethod
+<     def star_rating(table, record_id, splitstars=False): 
+<         """
+<         ## Create a star rating widget for a given record in given table.
+<         more information @ https://bitbucket.org/kra3/rating-plugin-for-web2py/
+<         if given table has a field called 'rating' average rating will also added to it.
+<         it will save ratings from logedin users only.
+<         
+<         - ``table`` is the table name
+<         - ``record_id`` is the id of record for which to show a rating widget.
+<         - ``splitstars`` if set to True will display split stars.
+<         """
+<         import uuid 
+<         id = uuid.uuid4()        
+<         row=db(db.plugin_wiki_master.tablename==table)(db.plugin_wiki_master.record_id==record_id).select().first()       
+<         rating = row.rating if row else 0
+<         callback = URL('plugin_wiki', 'star_rate', args = [table,record_id])  
+<         incr = 0.5 if splitstars else 1       
+<         return TAG[''](DIV(_id='star'+str(id),_class='rating'),
+<                        SCRIPT("jQuery(document).ready(function(){jQuery('%(uid)s').rating('%(callback)s',{increment:%(incr)s, maxvalue:5, curvalue:%(rating)s});});" % 
+<                                           dict(uid='#star'+str(id), callback=callback,incr=incr, rating=rating)))      
+< 
+---
+>         return gluon.template.render(content=content,context=context)        
