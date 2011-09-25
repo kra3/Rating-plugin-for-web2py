@@ -1,0 +1,40 @@
+data/rating/controllers/plugin_rating.py.i
+data/rating/models/plugin_rating.py.i
+data/rating/static/plugin_rating/delete.gif.i
+data/rating/static/plugin_rating/jquery.rating.css.i
+data/rating/static/plugin_rating/jquery.rating.js.i
+data/rating/static/plugin_rating/star-left.gif.i
+data/rating/static/plugin_rating/star-right.gif.i
+data/rating/static/plugin_rating/star.gif.i
+data/releases/web2py.plugin.rating_v0.w2p.i
+data/releases/web2py.plugin.rating_v1.w2p.i
+data/releases/web2py.plugin.rating_v2.w2p.i
+data/releases/web2py.plugin.wiki.v2.w2p.i
+data/releases/web2py.plugin.wiki.v2.w2p.d
+data/releases/web2py.plugin.wiki.v2.w2p.i
+data/releases/web2py.plugin.wiki.v2.w2p.d
+data/releases/web2py.plugin.wiki.v2.w2p.i
+data/src/controllers/plugin_rating.py.i
+data/src/models/plugin_rating.py.i
+data/src/static/plugin_rating/delete.gif.i
+data/src/static/plugin_rating/jquery.rating.css.i
+data/src/static/plugin_rating/jquery.rating.js.i
+data/src/static/plugin_rating/star-left.gif.i
+data/src/static/plugin_rating/star-right.gif.i
+data/src/static/plugin_rating/star.gif.i
+data/web2py.plugin.rating.w2p.i
+data/plugin_wiki_patch/plugin_wiki_controller.diff.i
+data/plugin_wiki_patch/plugin_wiki_model.diff.i
+data/releases/patch for plugin_wiki/plugin_wiki_controller.diff.i
+data/releases/patch for plugin_wiki/plugin_wiki_model.diff.i
+data/releases/patch for plugin_wiki/web2py.plugin.rating_v2.w2p.i
+data/releases/web2py.plugin.wiki_patched.w2p.i
+data/releases/web2py.plugin.wiki_patched.w2p.d
+data/releases/web2py.plugin.wiki_patched.w2p.i
+data/releases/patch for plugin_wiki/web2py.plugin.wiki_patched.w2p.i
+data/releases/patch for plugin_wiki/web2py.plugin.wiki_patched.w2p.d
+data/releases/patch for plugin_wiki/web2py.plugin.wiki_patched.w2p.i
+data/releases/patch for plugin_wiki/web2py.plugin.wiki.w2p.i
+data/releases/patch for plugin_wiki/web2py.plugin.wiki.w2p.d
+data/LICENSE.i
+data/README.i

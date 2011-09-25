@@ -1,0 +1,1 @@
+License was exact copy of web2py's one. changed to orig. lgpl v3
